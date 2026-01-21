@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="ar">
+<!DOCTYPE html>
+<html lang="ar">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,10 +13,12 @@
     }
     .banner {
       width: 100%;
+      overflow: hidden;
     }
     .banner img {
       width: 100%;
-      height: auto;
+      max-height: 300px;
+      object-fit: cover; /* يضمن ظهور البنر بدون قطع النصوص المهمة */
       display: block;
     }
     .main-image img {
@@ -45,18 +48,31 @@
     }
   </style>
 </head>
-<body>  <!-- نسخة 2: بانر + صورة رئيسية -->  <div class="banner">
-    <img src="https://i.ibb.co/ksfw3K3N/banner.png" alt="Brazilian Shoes Banner">
-  </div>  <div class="main-image">
-    <img src="https://i.ibb.co/6cLCxHpQ/main.png" alt="Brazilian Shoes">
-  </div>  <div class="content">
-    <h1>Brazilian Shoes</h1>
-    <p>أهلا بك في عالم الراحة و الأناقة 🌷</p><div class="buttons">
-  <a href="https://wa.me/1555109646">WhatsApp</a>
-  <a href="https://www.instagram.com/brazilianshoes7">Instagram</a>
-  <a href="https://www.tiktok.com/@brazilianshoes77">TikTok</a>
-  <a href="https://www.facebook.com/share/17nkVZMHLP/">Facebook</a>
-</div>
+<body>
 
-  </div></body>
+  <!-- البنر الجديد -->
+  <div class="banner">
+    <img src="https://i.ibb.co/7tbMP9Lb" alt="Brazilian Shoes Banner">
+  </div>
+
+  <!-- الصورة الرئيسية -->
+  <div class="main-image">
+    <img src="https://i.ibb.co/6cLCxHpQ" alt="Brazilian Shoes">
+  </div>
+
+  <!-- المحتوى -->
+  <div class="content">
+    <h1>Brazilian Shoes</h1>
+    <p>أهلا بك في عالم الراحة و الأناقة 🌷</p>
+
+    <div class="buttons">
+      <a href="https://wa.me/1555109646">WhatsApp</a>
+      <a href="https://www.instagram.com/brazilianshoes7">Instagram</a>
+      <a href="https://www.tiktok.com/@brazilianshoes77">TikTok</a>
+      <a href="https://www.facebook.com/share/17nkVZMHLP/">Facebook</a>
+      <a href="https://brazilianshoes.myeasyorders.com">Website</a>
+    </div>
+  </div>
+
+</body>
 </html>
